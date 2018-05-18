@@ -1,0 +1,41 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07/05/2018, 02:59:43
+    Author     :Raimundo Nonato Gonçalves de Paula
+*/
+
+.formLogin {
+    font-family: sans-serif !important;
+    font-size: 10pt !important;
+}
+
+.labelLogin {
+    font-weight: bold !important;
+}
+.inputLogin {
+    width: 120pt !important;
+}
+.selectLogin {
+    width: 126pt !important;
+}
+
+.btnLogin {
+    float: right !important;
+    margin-left: 5pt !important;
+    margin-top: 5pt !important;
+}
+.combo {
+    text-align: center !important;
+}
+.ui-growl {
+    left: 30pt;
+}
+.ui-growl-message {
+    font-family: sans-serif !important;
+    font-size: 10pt !important;
+    color: red;
+}

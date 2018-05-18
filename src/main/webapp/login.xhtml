@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Login</title>
+        <link type="text/css" rel="stylesheet" href="_css/login.css" />
+    </h:head>
+    <h:body>
+        <h:form styleClass="formLogin">
+            <p:growl id="growl" life="2000"/>
+            <h:panelGrid columns="2" cellspacing="5">
+                <p:outputLabel value="Chave:" for="inpChave" styleClass="labelLogin"/>
+                <p:inputText id="inpChave" styleClass="inputLogin" value="#{loginMB.chave}" required="true" requiredMessage="A chave é requerida."/>
+                <p:outputLabel for="sltarea" value="Área/Perfil:" styleClass="labelLogin"/>
+                <p:selectOneMenu id="sltarea" styleClass="selectLogin" value="#{loginMB.area}" required="true" requiredMessage="A area/perfil é requerida.">
+                    <f:selectItem itemLabel="---------Selecione---------" itemValue=""/>
+                    <f:selectItem itemLabel="Área AM-23" itemValue="Área AM-23"/>
+                    <f:selectItem itemLabel="Área U-1221" itemValue="Área U-1221"/>
+                    <f:selectItem itemLabel="Área ETE-ETA" itemValue="Área ETE-ETA"/>
+                </p:selectOneMenu>
+                <p:outputLabel for="sltequipe" value="Equipe:" styleClass="labelLogin"/>
+                <p:selectOneMenu id="sltequipe" styleClass="selectLogin" value="#{loginMB.equipe}" required="true" requiredMessage="A equipe é requerida.">
+                    <f:selectItem itemLabel="---------Selecione---------"/>
+                    <f:selectItem itemLabel="Equipe 1-Processo" itemValue="Equipe 1-Processo"/>
+                    <f:selectItem itemLabel="Equipe 2-Processo" itemValue="Equipe 2-Processo"/>
+                    <f:selectItem itemLabel="Equipe 3-Processo" itemValue="Equipe 3-Processo"/>
+                    <f:selectItem itemLabel="Equipe 4-Processo" itemValue="Equipe 4-Processo"/>
+                    <f:selectItem itemLabel="Equipe 5-Processo" itemValue="Equipe 5-Processo"/>
+                </p:selectOneMenu>
+                <p:outputLabel value="Senha:" for="inpSenha" styleClass="labelLogin"/>
+                <p:password id="inpSenha" styleClass="inputLogin" value="#{loginMB.senha}" required="true" requiredMessage="A senha é requerida."/>
+            </h:panelGrid>
+            <p:commandButton styleClass="btnLogin" value="Entrar" update="growl"/>
+            <p:commandButton styleClass="btnLogin" value="Cancelar" onclick="PF('login').hide()"/>
+        </h:form>
+    </h:body>
+</html>

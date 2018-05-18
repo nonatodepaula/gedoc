@@ -1,0 +1,68 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27/04/2018, 11:28:51
+    Author     : Raimundo Nonato Gonçalves de Paula
+*/
+
+html {
+    font-family: sans-serif !important;
+    font-size: 10pt !important;
+    background-color: rgb(214,217,223) !important;
+    
+}
+.dialogo {
+    opacity: 0.7 !important;
+    font-family: sans-serif !important;
+    font-size: 10pt !important;
+}
+
+.labelLogin {
+    font-weight: bold !important;
+}
+.inputLogin {
+    width: 120pt !important;
+}
+.selectLogin {
+    width: 126pt !important;
+}
+.ui-menubar#principal {
+    background-color:#d6d9df !important; /*muda cor de fundo*/
+    margin-top: -2pt !important; /*ajusta margem*/
+    margin-left: -6pt !important;/*ajusta margem*/
+    margin-right: -6pt !important;/*ajusta margem*/
+    height: 20pt !important;/*altura do componente*/
+    font-family: sans-serif !important;/*Fonte do componente*/
+    font-size: 10pt !important;
+}
+.toolInicial {
+    background-color:#d6d9df !important; /*muda cor de fundo*/
+    margin-top: -6pt !important;
+    margin-left: -6pt !important;/*ajusta margem*/
+    margin-right: -6pt !important;/*ajusta margem*/
+    height: 27pt !important;
+    font-family: sans-serif !important;
+    font-size: 10pt !important;
+    font-weight: normal;
+}
+input#estado {
+    border: #d6d9df !important;
+}
+.btnEntrar {
+    background-image: url("../_imagens/login.png")!important;
+    background-repeat: no-repeat !important;
+    margin-right: -6pt !important;/*ajusta margem*/
+    width: 27pt !important;
+    height: 27pt !important;    
+}
+.btnLogin {
+    float: right !important;
+    margin-left: 5pt !important;
+    margin-top: 5pt !important;
+}
+.combo {
+    text-align: center !important;
+}
